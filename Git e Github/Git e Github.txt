@@ -1,0 +1,87 @@
+# Git e Github
+
+## Comandos básicos
+
+**Windows**
+
+- cd → mudar de diretório
+- dir→ listar repositórios
+- mkdir → criar diretórios
+- del / rmdir → deletar
+
+**Linux**
+
+- cd → mudar de diretório
+- ls→ listar repositórios
+- mkdir → criar diretórios
+- rm / -rf → deletar
+
+## Como o git funciona
+
+### SHA1
+
+Algoritmo de encriptação 
+
+A encriptação gera conjunto de caracteres identificador de 40 dígitos.
+
+- Objetos fundamentais
+- Sistema distribuído
+- Segurança
+
+## Objetos internos do Git
+
+- Blobs - objeto onde os arquivos ficam guardados
+
+Blob tamanho 42
+
+\0 
+
+Ola Mundo 
+
+- Trees - armazena blobs
+
+Aponta para um blob e guarda o nome do arquivo
+
+- Commits -
+
+tree - aponta para uma arvore
+
+parente - aponta para outro commit
+
+autor - tem um autor
+
+mensagem - a mensagem em si 
+
+timestamp - horário 
+
+O git é um sistema distribuído e seguro, os commits são muito difíceis de ser alterado
+
+## Chave SSH e Token
+
+### Chave SSH
+
+Assinatura publica da maquina 
+
+## Iniciando o Git e criando um commit
+
+## Passo a passo no ciclo de vida
+
+Untracked → O git ainda não conhece o arquivo.
+
+Unmodified → arquivo dentro do repositório que ainda não sofreu modificação
+
+Modified - arquivo dentro do git que já foi modificado - ele faz isso comparando o SHA1 do arquivo.
+
+Staged → se rodar o gitadd novamente ele vai pra essa área onde ele aguarda modificação. 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82eb3ddb-1d40-4149-b2a9-34837608b768/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/19227f3c-5942-4cab-ad88-9864488ba141/Untitled.png)
+
+A modificação feita na maquina não repercute imediatamente para o repositório remoto, a não ser que você execute um comando especifico. 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bf4fb902-8de4-4e8e-b9f9-12df2cce1130/Untitled.png)
+
+git add → movendo os arquivos para stage
+
+git commit → move para o repositório
